@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario</h2>
+        <form action="insertar.php" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="DescripcionArticulo" class="form-label">Descripción del artículo</label>
+                <input type="text" class="form-control" id="DescripcionArticulo" name="Descripcion">
+            </div>
+            <div class="mb-3">
+                <label for="imagen" class="form-label">Seleccionar imagen:</label>
+                <input type="file" class="form-control" id="imagen" name="imagen">
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <form action="consultar.php" method="get">
+            <button type="submit" class="btn btn-primary">Consultar</button>
+        </form>
+    </div>
+</body>
+</html>
